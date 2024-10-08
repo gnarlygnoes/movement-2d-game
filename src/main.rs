@@ -2,10 +2,17 @@ use macroquad::prelude::*;
 use macroquad_platformer::*;
 use macroquad_tiled as tiled;
 
-// struct Player {
-//     collider: Actor,
-//     speed: Vec2,
-// }
+struct Player {
+    collider: Actor,
+    speed: Vec2,
+}
+
+fn InitPlayer(mut w: World) -> Player {
+    return Player {
+        collider: w.add_actor(vec2(50.0, 80.0), 8, 8),
+        speed: vec2(0., 0.),
+    };
+}
 
 #[macroquad::main("Movement 2d Game")]
 async fn main() {
@@ -28,10 +35,11 @@ async fn main() {
     let mut world = World::new();
     world.add_static_tiled_layer(static_colliders, 8., 8., 40, 1);
 
-    // let mut player = Player {
-    //     collider: world.add_actor(vec2(50.0, 80.0), 8, 8),
-    //     speed: vec2(0., 0.),
-    // };
+    let mut player = Player {
+        collider: world.add_actor(vec2(50.0, 80.0), 8, 8),
+        speed: vec2(0., 0.),
+    };
+    // InitPlayer(world);
 
     let screen_size = (108. * 15.) * 0.7;
     request_new_screen_size(screen_size, screen_size);
@@ -44,6 +52,11 @@ async fn main() {
             Rect::new(0.0, 0.0, screen_size, screen_size),
             None,
         );
+        {
+            let pos = world.actor_pos(player.collider);
+            // tiled_map.spr("tileset", 120, Rect::new(pos.x + 8.0, pos.y, -8., 8.))
+            draw_circle(pos.x, pos.y, 20., RED);
+        }
 
         next_frame().await
     }
