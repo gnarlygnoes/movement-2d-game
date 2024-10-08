@@ -1,0 +1,55 @@
+{
+  "compressionlevel": -1,
+  "height": 15,
+  "infinite": false,
+  "layers": [
+    {
+      "data": [
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 5, 5, 5, 5, 5, 0,
+        5, 5, 5, 5, 5, 0, 0, 5, 0, 0, 0, 5, 0, 5, 0, 0, 0, 5, 0, 5, 0, 0, 5, 5,
+        5, 5, 5, 0, 5, 0, 5, 5, 5, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 5, 0, 0,
+        0, 5, 0, 0, 5, 5, 5, 5, 5, 0, 5, 0, 5, 0, 5, 0, 5, 0, 0, 5, 0, 5, 0, 0,
+        0, 5, 0, 5, 0, 5, 0, 5, 0, 0, 5, 0, 5, 5, 5, 0, 5, 5, 5, 0, 5, 0, 5, 0,
+        0, 5, 0, 0, 0, 5, 0, 0, 0, 0, 0, 5, 0, 5, 0, 0, 5, 0, 5, 5, 5, 0, 5, 5,
+        5, 5, 5, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 5, 0, 0, 5, 5,
+        5, 0, 5, 5, 5, 0, 5, 0, 5, 5, 5, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0,
+        0, 0, 0, 0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0
+      ],
+      "height": 15,
+      "id": 1,
+      "name": "sample_layer",
+      "opacity": 1,
+      "type": "tilelayer",
+      "visible": true,
+      "width": 15,
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "nextlayerid": 2,
+  "nextobjectid": 1,
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "tiledversion": "1.11.0",
+  "tileheight": 108,
+  "tilesets": [
+    {
+      "columns": 5,
+      "firstgid": 1,
+      "image": "sample_tile_set.png",
+      "imageheight": 756,
+      "imagewidth": 540,
+      "margin": 0,
+      "name": "Sample Tile Set",
+      "spacing": 0,
+      "tilecount": 35,
+      "tileheight": 108,
+      "tilewidth": 108
+    }
+  ],
+  "tilewidth": 108,
+  "type": "map",
+  "version": "1.10",
+  "width": 15
+}
